@@ -1,0 +1,1 @@
+Rating = new Mongo.Collection('ratings')

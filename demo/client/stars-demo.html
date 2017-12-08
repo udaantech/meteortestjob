@@ -1,0 +1,47 @@
+<head>
+  <title>Stars Demo</title>
+</head>
+
+<body>
+  {{> demo}}
+</body>
+
+<template name="demo">
+ 
+  <div style="padding:10px">
+    <div>
+    <!-- //  default mutable large (rating = 2) -->
+    </div>
+    {{> starsRating id='rating1' rating=2 mutable=true size='lg'}}
+   <!--  <button class="reset">reset</button> -->
+  </div>
+
+  <div style="padding:10px">
+    <div>
+    <!--  // default mutable large and font Awesome's star (rating = 3) -->
+    </div>
+    {{> starsRating star='\\f005' id='rating2' rating=3 class="awesome" mutable=true size='lg'}}
+  </div>
+
+  <div style="padding:10px">
+    <div>
+      <!-- //default mutable large and font Awesome's star (rating = 2) -->
+    </div>
+    {{> starsRating star='\\f005' id='rating3'  rating=3 class="awesome" mutable=true size='lg'}}
+  </div>
+
+  <div style="padding:10px">
+    <div>
+      <!-- default mutable large and font Awesome's star (rating = 1) -->
+    </div>
+    {{> starsRating star='\\f005' id='rating4'  rating=3 class="awesome" mutable=true size='lg'}}
+  </div>
+
+
+  <div style="padding:10px">
+    <div>
+     <!--  with customized colors -->
+    </div>
+    {{> starsRating star='\\f005' id='rating5'  rating=4 class="awesome customized" mutable=true size='lg'}}
+  </div>
+</template>
